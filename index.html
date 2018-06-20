@@ -1,0 +1,416 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+<title>ch10</title>
+
+<!-- 先重置css设置后，再加载自设置的css，排版效率才会提升 -->
+<link href="Reset.css" rel="stylesheet"  >
+<link href="style.css" rel="stylesheet"  >
+</head>
+
+<body onmousewheel="return false;">
+<!-- 内容 -->
+<div id="content">
+
+	<!-- 图层 -->
+	<div id="Floor">	
+		<!-- 底层 -->
+		<!-- 背景 -->
+		<div id="Bg"></div>
+		<div id="RainBow"></div>
+		
+		<!-- 恐龙 -->
+		<div id="Dinosaur"></div>
+		
+		<!-- 长颈鹿 -->
+		<div id="Giraffe">		
+			<!-- 信箱超链接 -->
+			<a id="Speak" href="mailto:test@gmail.com?subject=请输入标题&body=请输入内容"></a>
+		</div>
+		<!-- 底层 -->
+		<!-- 草1 -->
+		<div id="Grass1"></div>
+		
+		<!-- 草2 -->
+		<div id="Grass2"></div>
+		
+		<!-- 背景云 -->
+		<div id="bg_Cloud">
+			<img id="bg_Cloud1" class="bg" src="image/Cloud.png" width="280px" height="162px" />
+			<img id="bg_Cloud2" class="bg" src="image/Cloud.png" width="340px" height="165px" />
+			<img id="bg_Cloud3" class="bg" src="image/Cloud.png" width="340px" height="165px" />
+			<img id="bg_Cloud4" class="bg" src="image/Cloud.png" width="300px" height="122px" />
+			<img id="bg_Cloud5" class="bg" src="image/Cloud.png" width="200px" height="132px" />
+			<img id="bg_Cloud6" class="bg" src="image/Cloud.png" width="340px" height="165px" />
+			<img id="bg_Cloud7" class="bg" src="image/Cloud.png" width="180px" height="112px" />
+			<img id="bg_Cloud8" class="bg" src="image/Cloud.png" width="240px" height="152px" />
+			<img id="bg_Cloud9" class="bg" src="image/Cloud.png" width="180px" height="112px" />
+			<img id="bg_Cloud10" class="bg" src="image/Cloud.png" width="340px" height="165px" />
+		</div>
+		
+		<!-- 中层 -->	
+		<!-- 栅栏1 -->
+		<div id="Fences1"></div>
+		
+		<!-- 栅栏2 -->
+		<div id="Fences2"></div>
+		
+		<!-- 地板1 -->
+		<div id="Floor1"></div>	
+
+		<!-- 地板2(小土拨) -->		
+		<div id="Floor2"></div>	
+		
+		<!-- 上层 -->
+		<!-- 内容4(操作提示) -->
+		<font size="5" color="#666666" id="content4">
+		请使用chrome开启! 按键盘←或→键或拉动水平滚动条，慢慢控制人物移动速度
+		</font>
+		
+		<!-- 洞窟 -->
+		<div id="Cave"></div>
+		
+		<!-- 南瓜1 -->
+		<div id="Pumpkin1"></div>
+		
+		<!-- 南瓜2 -->
+		<div id="Pumpkin2"></div>
+	</div>
+	
+	<!-- 标题 -->
+	<div id="title">
+		<!-- 标题云1 -->
+		<div class="Cloud" id="Cloud1">
+			<!-- 标题文字 -->
+			<font class="title" size="7" color="#F26522">宋俊超个人简历</font>			
+		</div>
+		
+		<!-- 标题云2 -->
+		<div class="Cloud" id="Cloud2">
+			<!-- 标题文字 -->
+			<font class="title" size="7" color="#F26522">专业能力</font>			
+		</div>
+		<!-- 内容1 -->
+		<font size="7" color="#F26522" id="content1">HTML</font>		
+		<!-- 内容2 -->
+		<font size="7" color="#F26522" id="content2">CSS</font>		
+		<!-- 内容3 -->
+		<font size="7" color="#F26522" id="content3">JavaScript</font>
+		
+		<!-- 标题云3 -->
+		<div class="Cloud" id="Cloud3">
+			<!-- 标题文字 -->
+			<font class="title" size="7" color="#F26522">VUE</font>			
+		</div>
+		
+		<!-- 标题云4 -->
+		<div class="Cloud" id="Cloud4">
+			<!-- 标题文字 -->
+			<font class="title" size="7" color="#F26522">ThinkPHP</font>			
+		</div>
+		
+		<!-- 标题云5 -->
+		<div class="Cloud" id="Cloud5">
+			<!-- 标题文字 -->
+			<font class="title" size="7" color="#F26522">有兴趣请联系我</font>			
+		</div>		
+	</div>
+	
+	<!-- 角色 -->
+	<div id="Character">
+		<!-- 主角 -->
+		<div id="Player"></div>
+		
+		<!-- 猪 -->
+		<div id="Pig"></div>
+		
+		<!-- 第一层蝙蝠 -->
+		<div id="Bat1" class="Bat1"></div>
+		<div id="Bat2" class="Bat2"></div>
+		<div id="Bat3" class="Bat3"></div>
+		<div id="Bat4" class="Bat2"></div>
+		
+		<!-- 第二层蝙蝠 -->
+		<div id="Bat5" class="Bat3"></div>
+		<div id="Bat6" class="Bat1"></div>
+		<div id="Bat7" class="Bat2"></div>
+		
+		<!-- 第三层蝙蝠 -->
+		<div id="Bat8" class="Bat2"></div>
+		<div id="Bat9" class="Bat3"></div>
+		<div id="Bat10" class="Bat1"></div>
+				
+		<!-- 飞猪1 -->
+		<a id="FlyPig1" href="#1">
+			<!-- 飞猪文字 -->
+			<font id="FlyPigText" size="6" color="#F26522" >网页设计</font>
+		</a>
+		
+		<!-- 飞猪2 -->
+		<a id="FlyPig2" href="#2">
+			<!-- 飞猪文字 -->
+			<font id="FlyPigText" size="6" color="#F26522" >游戏设计</font>
+		</a>
+		
+		<!-- 飞猪3 -->
+		<a id="FlyPig3" href="#3">
+			<!-- 飞猪文字 -->
+			<font id="FlyPigText" size="6" color="#F26522">产品设计</font>
+		</a>
+		
+		<!-- 飞猪4 -->
+		<div id="FlyPig4"></div>
+		
+		<!-- 飞猪5 -->
+		<div id="FlyPig5"></div>
+		
+		<!-- 飞猪6 -->
+		<div id="FlyPig6"></div>
+		
+		<!-- 飞猪7 -->
+		<div id="FlyPig7"></div>
+		
+		<!-- 气球1 -->
+		<a id="Balloon1" href="#1">
+			<!-- 气球文字 -->
+			<font id="BalloonText" size="6" color="#F26522">游戏</font>
+		</a>
+		
+		<!-- 气球2 -->
+		<a id="Balloon2" href="#2">
+			<!-- 气球文字 -->
+			<font id="BalloonText" size="6" color="#F26522">绘画</font>
+		</a>
+		
+		<!-- 气球3 -->
+		<a id="Balloon3" href="#3">
+			<!-- 气球文字 -->
+			<font id="BalloonText" size="6" color="#F26522">网页</font>
+		</a>
+		
+		<!-- 小鸟 -->
+		<div id="Bird"></div>
+	</div>
+</div>
+
+<!-- 引入jQuery插件 -->
+<script type="text/javascript" src="js/jquery-1.4.3.min.js"></script>
+
+<script type="text/javascript">
+//设置视差滚动速度差
+
+var strength1 = 50;
+var strength2 = 200;
+var strength3 = 500;
+
+//获取窗口宽度跟高度
+var ScreenWidth = $(window).width();
+var ScreenHeight = $(window).height();
+
+//获取窗口长宽比
+var Screen = ScreenWidth / ScreenHeight;
+
+//水平轴
+var currentScroll;
+
+//当滚动条滚动时
+$(window).scroll(function()
+{  	
+	//获取水平轴位置
+    currentScroll = $(this).scrollLeft();
+	
+	//横向视差滚动 
+	//当前水平轴位置 - (当前窗口宽度 / 2) = 背景滚动值
+    var pageX = currentScroll - ($(window).width() / 2); 
+	
+	//1 * 背景滚动值 * 1(1由前向后,-1由后向前) = 滚动方向	
+    var newvalueX = 1* pageX * 1;	
+	
+	//设置该卷标的CSS background-position 背景位置值 来移动背景产生视差滚动的效果
+    $('.bg').css("background-position", (strength1 / $(window).width() * newvalueX * -1)+"px "+"0px");
+	
+	$('#RainBow').css("background-repeat","no-repeat");
+	$('#RainBow').css("background-position", (strength1 / $(window).width() * newvalueX * -1)+"px "+"0px");		
+    $('#Grass1').css("background-position", (strength2 / $(window).width() * newvalueX * -1)+"px "+"0px");
+	$('#Grass2').css("background-position", (strength2 / $(window).width() * newvalueX * -1)+"px "+"0px");	
+    $('#Floor2').css("background-position", (strength3 / $(window).width() * newvalueX * -1)+"px "+"0px");
+	
+	//当长宽比是宽屏幕1.7比时
+	if(Screen > 1.7)
+	{
+		//调整背景宽度
+		$('#bg').css("width", "506%");
+		$('#Floor2').css("width", "506%");
+		$('#Grass1').css("width", "502%");
+		$('#Grass2').css("width", "502%");
+	}	
+});
+</script >
+
+<script type="text/javascript">
+//当前窗口宽度 / 7(排版的当前窗口宽1280px / 当时固定的触发像素位置182px = 7)= 第一个触发点
+var ActionPoint1 = ScreenWidth / 7;
+
+//当前窗口宽度 / 1.25 = 第二个触发点
+var ActionPoint2 = ScreenWidth / 1.25;
+
+//当前窗口宽度 / 0.315 = 第三个触发点
+var ActionPoint3 = ScreenWidth / 0.315;
+
+//当前窗口宽度 / 0.25 = 第四个触发点
+var ActionPoint4 = ScreenWidth / 0.25;
+
+//当前窗口宽度 / 0.19 = 第五个触发点
+var ActionPoint5 = ScreenWidth / 0.19;
+
+//当前窗口高度 / 2.50 = 跳跃起跳最高点高度
+var JumpUp = ScreenHeight / 2.50;
+
+//当前窗口高度 / 1.25 = 跳跃降落最低点高度
+var JumpDown = ScreenHeight / 1.25;	
+
+//旧水平滚动条位置
+var previousScroll  = 0;
+
+//时间计时
+var timer;
+
+//猪跳跃状态
+var PigJump = 0;
+
+//当滚动条滚动时
+$(window).scroll(function(){  
+	
+	//获取窗口宽度跟高度
+	ScreenWidth = $(window).width();
+	ScreenHeight = $(window).height();
+	
+	//当前窗口宽度 / 7(排版的当前窗口宽1280px / 当时固定的触发像素位置182px = 7)= 第一个触发点
+	ActionPoint1 = ScreenWidth / 7;
+	
+	//当前窗口宽度 / 1.25 = 第二个触发点
+	ActionPoint2 = ScreenWidth / 1.25;
+	
+	//当前窗口宽度 / 0.315 = 第三个触发点
+	ActionPoint3 = ScreenWidth / 0.315;
+	
+	//当前窗口宽度 / 0.25 = 第四个触发点
+	ActionPoint4 = ScreenWidth / 0.25;
+	
+	//当前窗口宽度 / 0.19 = 第五个触发点
+	ActionPoint5 = ScreenWidth / 0.19;
+	
+	//当前窗口高度 / 1.25 = 跳跃起跳最高点高度
+	JumpUp = ScreenHeight / 3.31;
+	
+	//当前窗口高度 / 1.25 = 跳跃降落最低点高度
+	JumpDown = 0;
+	
+	//获取水平轴位置
+	currentScroll = $(this).scrollLeft();
+	
+	//猪播放走路动画
+	$("#Pig").css('webkitAnimationName', 'PigWalk');
+	
+	//判断水平轴向右滚动
+	if(currentScroll > previousScroll)
+	{		
+		//人物向右走
+		$("#Player").css('webkitAnimationName', 'RWalk');	
+		
+		//只要每过完250毫秒就执行funtion idel
+		clearTimeout(timer);		
+		timer = setTimeout(idel , 250); 					
+	}
+	
+	//判断水平轴向左滚动
+	else if(currentScroll < previousScroll)
+	{
+		//人物向右走
+		$("#Player").css('webkitAnimationName', 'LWalk');
+			
+		//只要每过完250毫秒就执行funtion idel
+		clearTimeout(timer);		
+		timer = setTimeout(idel , 250); 		
+	}
+	
+	//当水平轴滚动到第一个触发点
+	if(currentScroll > ActionPoint1)
+	{					
+		//判断猪是否跳跃过第一次
+		if(PigJump == 0)
+		{			
+			//队列动画实现跳跃一次
+			$("#Pig").animate({bottom:"250px"});
+			$("#Pig").animate({bottom:"0px"});
+			PigJump = 1;
+		}		
+	}
+	
+	//当水平轴还没滚动到第一个触发点
+	else if(currentScroll < ActionPoint1)
+	{
+		//把猪的跳跃状态恢复为0
+		PigJump = 0;
+	}
+	
+	//当水平轴滚动到第二个触发点
+	if(currentScroll >= ActionPoint2)
+	{				
+		//同时飞出蝙蝠
+		$("#Bat1").animate({top:"40%",left:"140%"}, 3500);
+		$("#Bat2").animate({top:"40%",left:"155%"}, 3500);
+		$("#Bat3").animate({top:"40%",left:"170%"}, 4000);
+		$("#Bat4").animate({top:"40%",left:"185%"}, 5000);
+		$("#Bat5").animate({top:"57%",left:"140%"}, 3500);
+		$("#Bat6").animate({top:"57%",left:"155%"}, 4000);
+		$("#Bat7").animate({top:"57%",left:"170%"}, 5000);
+		$("#Bat8").animate({top:"75%",left:"140%"}, 3500);
+		$("#Bat9").animate({top:"75%",left:"155%"}, 4000);
+		$("#Bat10").animate({top:"75%",left:"170%"}, 5000);		
+	}
+	
+	//当水平轴滚动到第三个触发点
+	if(currentScroll > ActionPoint3)
+	{		
+		//判断猪是否跳跃过第二次
+		if(PigJump == 1)
+		{			
+			//队列动画实现跳跃一次
+			$("#Pig").animate({bottom:JumpUp});
+			$("#Pig").animate({bottom:JumpDown});
+			PigJump = 2;
+		}		
+	}
+	
+	//当水平轴还没滚动到第三个触发点，而且水平轴已经滚动过第一个触发点
+	else if(currentScroll < ActionPoint3 && currentScroll > ActionPoint1)
+	{
+		//把猪的跳跃状态恢复为1
+		PigJump = 1;
+	}
+	
+	//当水平轴已经滚动过第四个触发点，而且水平轴还没滚动超过第五个触发点
+	if (currentScroll > ActionPoint4 && currentScroll < ActionPoint5)
+	{
+		$("#Speak").animate({height:"150px"}, 2000);
+	}
+	
+	//递回现在水平轴滚动位置 给 旧水平轴滚动位置
+	previousScroll = currentScroll;     
+}); 
+
+//当没有滚动的时候 
+var idel = function () 
+{        	
+	//玩家动画取消播放
+	$("#Player").css('webkitAnimationName', '');
+	
+	//猪动画取消播放
+	$("#Pig").css('webkitAnimationName', '');	 
+};  
+</script>
+
+</body>
+</html>
